@@ -9,7 +9,7 @@ driver.get("https://rahulshettyacademy.com/loginpagePractise/")
 
 # sending value
 driver.find_element(By.ID, "username").send_keys("rahulshettyacademy")
-driver.find_element(By.NAME, "password").send_keys("learning")
+driver.find_element(By.NAME, "password").send_keys("Learning@830$3mK2")
 # Click on checkbox
 driver.find_element(By.XPATH, "//input[@id='terms']").click()
 # click on Radio button

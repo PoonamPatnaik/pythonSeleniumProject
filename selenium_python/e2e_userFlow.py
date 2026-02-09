@@ -44,3 +44,9 @@ for element in drop_down_elements:
        print(selected_country)
        assert selected_country == exepected_dd
        break
+driver.find_element(By.XPATH,"//label [@for='checkbox2']").click()
+driver.find_element(By.XPATH,"//input [@type='submit']").click()
+expected_message = "Success!"
+actual_message = driver.find_element(By.XPATH,"//div/strong").text
+assert expected_message == actual_message
+print("Assertion success Post transaction Completion")
